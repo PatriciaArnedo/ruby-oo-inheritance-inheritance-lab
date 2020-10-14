@@ -8,13 +8,28 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+bill = Student.new
+bill.first_name = "Bill"
+bill.last_name = "Gates"
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
 
-some_knowledge = avi.teach 
+knowledge1 = avi.teach 
+knowledge2 = avi.teach 
+knowledge3 = avi.teach 
 
-steve.learn(some_knowledge)
+steve.learn(knowledge1)
+steve.learn(knowledge2)
+steve.learn(knowledge3)
+
+bill.learn(knowledge1)
+bill.learn(knowledge2)
+bill.learn(knowledge3)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+puts bill.knowledge
+puts steve.knowledge
